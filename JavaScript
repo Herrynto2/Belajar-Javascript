@@ -1,0 +1,128 @@
+#Javascript Data Type
+    "Is kinds of data that can be saved into variable (var)."
+    1. Integer (Number) 
+    2. String (Text)
+    3. Float (Decimal)
+    4. Boolean (True False)
+    5. Object
+    6. Function
+    7. Undefined
+
+#Operator
+    "Is a symbol that used to doing operate."
+    A. Binary
+       Need 2 Operand (operand1 + operand2)
+       1. Aritmathic
+          +, -, *, /, %(modulus/sisa pembagian)
+       2. Assignment (penugasan)
+          =, +=(menjumlahkan), -=, *=, /=, %=  
+          ex : x = 10, x += 5, 15
+       3. Comparison (perbandingan)
+          == (membandingkan nilai), != (tidak sama dengan), === (membandingkan nilai dan tipe data), !==
+          > (lebih besar), < (kurang), <=, >=
+          ex : 10 == 10, True
+       4. Logic
+          && (AND), || (OR), ! (NOT)
+       5. String
+          ex ; x = "string"
+    
+    B. Ternary
+       Need 3 Operand 
+       1. Conditional
+       (Condition) ? true : false
+       ex : (x*2 == 0) ? "genap : ganjil, ganjil
+    C. Unary
+       Need 1 Operand (operator operand)
+       1. Typeof
+       for know what kind of data type is used 
+       ex : typeof(10), Number
+
+#Number
+    1. Number without Decimal
+       ex : 10, 1500, 12345
+       Accurate until 15 digits 
+    2. Number with Decimal
+       ex : 3.14, 0.500
+       Accurate until 17 digits 
+    3. Eksponen
+       ex : 123e5 -> 12300000
+    4. Negative Number
+       ex : -10
+    5. Special Number
+       - Infinity -> 2/0 = Infinity 
+       - (-Infinity) -> -2/0 = -Infinity
+       - NaN -> 0/0, 100/"string"
+
+#String
+    "Nama" / 'Nama'
+    Escape Character
+    \0 -> Null       \' -> '
+    \" -> "          \\ -> \
+    \n -> newline    \t -> tab
+    \b -> backspace  \uxxxx -> unicode
+    ex :
+    - x = "String"
+    - "String + String" -> StringString
+    - "String".lenght -> 6 (to counting lenght a string)
+
+
+#Boolean    
+    True or False
+    ex :
+    Boolean(10 < 20) -> true
+    var x = 10, x < 20 -> true
+    "Satring" == "string" -> false
+
+#variable
+    "Is a place has name, used for saving values"
+    var, let, const
+    Step :
+    Declaration (Mendaftarkan variabel ke dalam lingkup yang sesuai)
+    Inisialisasi (Menyediakan memori untuk variabel)
+    Assigment (Menetapkan nilai yang spesifik ke dalam variabel)
+    ex : var nama; //deklarasi dan Inisialisasi
+         nama = "heri" // Assignment
+    shorthand : var nama = "heri",
+                    umur = "21";
+
+#Console
+   "To display in firefox console via inspect element"
+    console.log("Isi")
+
+#Popup Box
+   "Is a small window at browser that used as interaction between user and web"
+    1. alert("String");                        to displaying massage
+    2. prompt("String");                       to displaying choosen
+       var x = prompt("String :")          to saving input into var x 
+    3. confirm("String");                      to displaying confirm true or false
+
+#Looping If Else
+    if (x == y) {
+    }
+    else if (x == z){
+    }
+    else {
+    }
+    Note :
+      == (Membandingkan nilai) / === (Membandingkan nilai dan type data)
+      parseInt(prompt("String")); (change string to integer)
+
+
+
+#Looping Switch Case
+    switch(ekspresi) {
+       case "1":
+       aksi 1
+       {break;}
+       case "2":
+       aksi 2
+       {break;}
+       case "n":
+       aksi n
+       {break;}
+       default:
+       aksi default
+       {break;}
+    }
+
+
