@@ -1,12 +1,36 @@
 #Javascript Data Type
     "Is kinds of data that can be saved into variable (var)."
-    1. Integer (Number) 
+    1. Number (Integer) 
     2. String (Text)
     3. Float (Decimal)
     4. Boolean (True False)
     5. Object
     6. Function
     7. Undefined
+    8. Array
+
+#variable
+    "Is a place has name, used for saving values"
+    var, let, const
+    Step :
+    Declaration (Mendaftarkan variabel ke dalam lingkup yang sesuai)
+    Inisialisasi (Menyediakan memori untuk variabel)
+    Assigment (Menetapkan nilai yang spesifik ke dalam variabel)
+    ex : var nama; //deklarasi dan Inisialisasi
+         nama = "heri" // Assignment
+    shorthand : var nama = "heri",
+                    umur = "21";
+
+#Console
+   "To display in firefox console via inspect element"
+    console.log("Isi")
+
+#Popup Box
+   "Is a small window at browser that used as interaction between user and web"
+    1. alert("String");                        to displaying massage
+    2. prompt("String");                       to displaying choosen
+       var x = prompt("String :")          to saving input into var x 
+    3. confirm("String");                      to displaying confirm true or false
 
 #Operator
     "Is a symbol that used to doing operate."
@@ -71,32 +95,9 @@
     ex :
     Boolean(10 < 20) -> true
     var x = 10, x < 20 -> true
-    "Satring" == "string" -> false
+    "String" == "string" -> false
 
-#variable
-    "Is a place has name, used for saving values"
-    var, let, const
-    Step :
-    Declaration (Mendaftarkan variabel ke dalam lingkup yang sesuai)
-    Inisialisasi (Menyediakan memori untuk variabel)
-    Assigment (Menetapkan nilai yang spesifik ke dalam variabel)
-    ex : var nama; //deklarasi dan Inisialisasi
-         nama = "heri" // Assignment
-    shorthand : var nama = "heri",
-                    umur = "21";
-
-#Console
-   "To display in firefox console via inspect element"
-    console.log("Isi")
-
-#Popup Box
-   "Is a small window at browser that used as interaction between user and web"
-    1. alert("String");                        to displaying massage
-    2. prompt("String");                       to displaying choosen
-       var x = prompt("String :")          to saving input into var x 
-    3. confirm("String");                      to displaying confirm true or false
-
-#Looping If Else
+#Condition If Else
     if (x == y) {
     }
     else if (x == z){
@@ -107,9 +108,7 @@
       == (Membandingkan nilai) / === (Membandingkan nilai dan type data)
       parseInt(prompt("String")); (change string to integer)
 
-
-
-#Looping Switch Case
+#Condition Switch Case
     switch(ekspresi) {
        case "1":
        aksi 1
