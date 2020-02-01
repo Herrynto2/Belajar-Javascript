@@ -145,18 +145,23 @@
             - Math : Math.sin(), Math.cos(), Math.random(), Math.round(), Math.floor(), Math.ceil(), Math.log()
       - User defined function : Buatan sendiri
             - Exp
-                  function nama(parameter) {
-                     ...
-                     return ... ; (boleh ada/tidak)
-                  }
+                  function nama(parameter) {    return ... ;}
                   console.log(nama(argument))
-            - Parameter : var didalam kurung function
-                          jika parameter > dari argument maka parameter terakhir di undifined 
-            - Argument : nilai yang dikirimkan ke parameter saat function dipanggil 
-                         jika argument > parameter maka argument terakhir akan diabaikan
-            - Arguments : array yang berisi banyak nilai yang dikirimkan saat function dipanggil
-                          Bisa menangani parameter yang kosong
-      - Function Scope : lokal function tidak bisa memanggil global function
-                         global function tidak bisa mengintip ke lokal funtion
+            - Parameter        : var didalam kurung function
+                                 jika parameter > dari argument maka parameter terakhir di undifined 
+            - Argument         : nilai yang dikirimkan ke parameter saat function dipanggil 
+                                 jika argument > parameter maka argument terakhir akan diabaikan
+            - Arguments        : array yang berisi banyak nilai yang dikirimkan saat function dipanggil
+                                 Bisa menangani parameter yang kosong
+      - Function Scope      : lokal function tidak bisa memanggil global function
+                              global function tidak bisa mengintip ke lokal funtion
+      - Function Rekursif   : Function yang memanggil dirinya sendiri
+                              Sebagai pengganti looping 
+      - Function Expression : Function yang berada dalam variabel dan nama optional
+                              Harus dideklarasikan dulu baru dipanggil
+                              Lebih digunakan di JS lanjutan
+                              Exp : var tampil = function (a) { body}
+
+                           
 
       http://www.3schools.com/jsref/jsref_obj_sring.asp
