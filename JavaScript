@@ -4,10 +4,11 @@
     2. String (Text)
     3. Float (Decimal)
     4. Boolean (True False)
-    5. Object
-    6. Function
-    7. Undefined
-    8. Array
+    5. Array
+    6. Object
+    7. Function
+    8. Undefined (variabel yang sudah dideklarasi tapi belum di definiskikan)
+       var c = undefined;
 
 #variable
     "Is a place has name, used for saving values"
@@ -143,6 +144,7 @@
             - Popoup : Alert(), prompt(), confirm()
             - String : charArt(), slice(), split(), toString(), toLowerCase, toUpperCase()
             - Math : Math.sin(), Math.cos(), Math.random(), Math.round(), Math.floor(), Math.ceil(), Math.log()
+
       - User defined function : Buatan sendiri
             - Exp
                   function nama(parameter) {    return ... ;}
@@ -153,6 +155,7 @@
                                  jika argument > parameter maka argument terakhir akan diabaikan
             - Arguments        : array yang berisi banyak nilai yang dikirimkan saat function dipanggil
                                  Bisa menangani parameter yang kosong
+
       - Function Scope      : lokal function tidak bisa memanggil global function
                               global function tidak bisa mengintip ke lokal funtion
       - Function Rekursif   : Function yang memanggil dirinya sendiri
@@ -165,3 +168,51 @@
                            
 
       http://www.3schools.com/jsref/jsref_obj_sring.asp
+
+#Array  
+      - Variabel yang bisa menampung lebih dari satu nilai   :  var x = [0, 1, 2, 4]
+      - Pasangan antara Key dan Value                        :  var x[0] = "senin"
+      - Boleh memiliki tipe data yang beda                   :  var x = [12, "senin", true]
+      - array bukan tipe data tapi bertipe object            :  console.log(x[4])
+      - array dalam array (multidimensi)                     :  var x = [0, 1, 2, [0, 1, 2]]
+                                                                var x[3][1] = "senin"
+      - Method Array 
+         - Length : Untuk menghitung jumlah isi adalam array   : console.log(x.lenght )   
+         - Join   : Untuk menampilkan index array dgn rapih    : console.log(x.join() )
+         - Push   : add element baru di akhir array            : x.push("senin", "selasa")
+         - Pop    : Delete element terakhir array              : x.pop()
+         - Unshift: add element baru di awal array             : x.unshift("senin")
+         - Shift  : delete element di awal array               : x.shift()
+         - Splice : Menyisipkan element ditengah2              : x.splice(keyawal, maudihapus?, elementbaru1, ...)
+         - Slice  : Memotong element di tengah array           : x.slice(awal, akhir)
+         - ForEach: Menampilin setiap element pada array       : x.forEach(parameter, key)
+                    tidak bisa kembaliin nilai array
+         - Map    : Mirip dengan foreach tapi bisa             : x.map()
+                    bisa mengembalikan nilai array
+         - Sort   : Mengurutkan array yang acak                : x.sort()
+         - Filter : Mencari element lebih dari satu            : x.filter()
+                    bisa mengembalikan nilai array             
+         - Find   : Mencari satu element                       : x.find()
+                    tidak bisa kembaliin nilai array
+         - Includes : Cek apakah data sudah ada di array       : x.includes()
+         - Reduce : Mejumlah atau mengurangi isi pada array    : var hasil = array.reduce(function(total, number) {
+                                                                   return total - number; }) 
+         - Concat : Menggabungkan 2 atau lebih array jadi satu : var array = array1.concat(array2);
+
+#Object 
+      - Array yang key nya memiliki nama                    : var mhs = { nama  : "Heri",
+                                                                             kelas : "6CC"
+                                                                           }
+      - Cara nampilin                                       : console.log(mhs.nama) / console.log(mhs["nama"])
+      - Cara membuat object
+         - Object Literal
+         - Function Declaration
+         - Function Constraction
+         - Object.create()
+      - This 
+          Untuk mengglobalkan variabel ke dalam function object      :  this.mhs
+
+            
+            
+            
+
